@@ -19,9 +19,10 @@
         android:textSize="20sp"
         android:gravity="center"/>
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/but_start"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/but_start"/>
+        android:text="@string/but_start" />
     <RadioGroup
         android:id="@+id/radio_group"
         android:orientation="vertical"
@@ -50,10 +51,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"></CalendarView>
         <TimePicker
-            android:id="@+id/time"
+            android:id="@+id/time_pick"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="invisible">
+            android:visibility="invisible"
+            android:timePickerMode="spinner">
         </TimePicker>
     </FrameLayout>
     </LinearLayout>
@@ -62,7 +64,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/but_done"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/but_done"/>
         <TextView
